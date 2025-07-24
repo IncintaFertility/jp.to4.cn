@@ -15,7 +15,14 @@
       "Bash(git init:*)",
       "Bash(git config:*)",
       "Bash(ls:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(gh:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(tar:*)",
+      "Bash(git remote:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }
