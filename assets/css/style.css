@@ -1,0 +1,437 @@
+/* Incinta Fertility Center - Custom Styles */
+
+:root {
+    --primary-color: #c18e34;
+    --secondary-color: #ea8f6e;
+    --accent-color: #f4d49b;
+    --text-dark: #2c3e50;
+    --text-muted: #6c757d;
+    --light-bg: #fefefe;
+    --warm-bg: #fdf9f4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Header Styles */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.3;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-card {
+    height: 100%;
+}
+
+.service-card .card-body {
+    padding: 2rem;
+}
+
+/* Section Spacing */
+section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    margin-bottom: 3rem;
+}
+
+/* Statistics Section */
+.stats-section {
+    background: var(--warm-bg);
+    border-top: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.stat-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Team Section */
+.team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Detail Pages */
+.service-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 5rem 0;
+}
+
+.service-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.service-content h3 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+/* Logo Styling */
+.navbar-brand img {
+    height: 45px;
+    width: auto;
+}
+
+/* Warm background sections */
+.bg-light {
+    background-color: var(--warm-bg) !important;
+}
+
+/* Enhanced service cards with warm tones */
+.service-card .bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+}
+
+/* Contact form enhancements */
+.contact-form {
+    background: var(--warm-bg);
+    border: 2px solid var(--accent-color);
+}
+
+/* Team member images */
+.team-member img {
+    border: 3px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.team-member img:hover {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Enhanced buttons */
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* Location cards enhancement */
+.location-card {
+    border-left: 4px solid var(--secondary-color);
+}
+
+.location-card:hover {
+    border-left-color: var(--primary-color);
+}
+
+/* FAQ styling */
+.faq-question {
+    background: var(--warm-bg) !important;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.faq-question:hover {
+    background: var(--accent-color) !important;
+}
+
+/* Pricing cards */
+.pricing-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+}
+
+/* Service Detail Process Timeline */
+.process-timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.process-step {
+    display: flex;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.process-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 60px;
+    width: 2px;
+    height: calc(100% + 10px);
+    background: var(--accent-color);
+    z-index: 0;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.step-content {
+    flex: 1;
+    background: var(--warm-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.step-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.step-content p {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.step-content ul li {
+    margin-bottom: 0.3rem;
+    color: var(--text-muted);
+}
+
+/* Service detail enhancements */
+.service-content .alert {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service-content .alert-info {
+    background: linear-gradient(135deg, rgba(193, 142, 52, 0.1), rgba(234, 143, 110, 0.1));
+    color: var(--text-dark);
+    border-left: 4px solid var(--primary-color);
+}
+
+.service-content .alert-success {
+    background: var(--warm-bg);
+    color: var(--text-dark);
+    border-left: 4px solid var(--secondary-color);
+}
+
+/* Responsive timeline */
+@media (max-width: 768px) {
+    .process-step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .process-step:not(:last-child)::after {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70px;
+    }
+    
+    .step-number {
+        margin: 0 auto 1rem auto;
+    }
+    
+    .step-content {
+        border-left: none;
+        border-top: 4px solid var(--secondary-color);
+    }
+}
+
+footer h5, footer h6 {
+    color: white;
+}
+
+footer .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.5rem;
+    }
+    
+    section {
+        padding: 2rem 0;
+    }
+    
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

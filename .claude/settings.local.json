@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:incintafertility.com)",
+      "Bash(php:*)",
+      "Bash(mkdir:*)",
+      "Bash(REQUEST_URI=\"/\" php -f index.php)",
+      "Bash(REQUEST_URI=\"/services\" php -f index.php)",
+      "Bash(REQUEST_URI=\"/services/ivf\" php -f index.php)",
+      "Bash(REQUEST_URI=\"/contact\" php -f index.php)",
+      "Bash(wget:*)",
+      "Bash(grep:*)",
+      "Bash(REQUEST_URI=\"/team\" php -f index.php)",
+      "Bash(sqlite3:*)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(ls:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}

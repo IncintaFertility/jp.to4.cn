@@ -1,0 +1,27 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# PHP
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Server specific
+.htaccess.local
+.user.ini
+
+# Temporary files
+update-*.php
+test-*.php
+
+# Cache
+cache/
+tmp/
+
+# Sensitive files
+config/database.local.php
